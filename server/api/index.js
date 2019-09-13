@@ -1,7 +1,6 @@
 const router = require('express').Router();
 
-router.use('/heroes', require('./heroes'));
-router.use('/teams', require('./teams'));
+router.use('/movies', require('./movies'));
 
 router.use((req, res, next) => {
   const err = new Error('Not found.');

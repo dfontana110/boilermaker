@@ -1,7 +1,7 @@
 const db = require('./database');
-const Superhero = require('./superhero');
+const Movie = require('./movie');
 
 module.exports = {
   db,
-  Superhero,
+  Movie,
 };

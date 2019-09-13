@@ -1,4 +1,4 @@
-const { db, Superhero } = require('./server/db/index');
+const { db, Movie } = require('./server/db/index');
 
 const app = require('./server');
 
@@ -8,3 +8,5 @@ db.sync().then(function() {
   app.listen(port);
   console.log(`Listening on port ${port}`);
 });
+
+//

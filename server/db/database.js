@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const db = new Sequelize('postgres://localhost:5432/superheroes', {
+const db = new Sequelize('postgres://localhost:5432/imdbTop250', {
   logging: false,
 });
 

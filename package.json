@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "webpack -w & nodemon start.js",
+    "start-server": "nodemon start.js -e html,js,css --ignore public",
+    "build-watch": "webpack -w",
+    "start-dev": "npm run build-watch & npm run start-server",
     "start": "nodemon start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/preset-env": "^7.6.0",
+    "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
